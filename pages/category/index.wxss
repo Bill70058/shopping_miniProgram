@@ -1,0 +1,60 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%
+}
+
+.cate {
+  height: 100%
+}
+
+.cate_container {
+  height: calc(100vh - 90rpx);
+  display: flex
+}
+
+.left_menu {
+  flex: 2;
+}
+
+.left_menu view {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.right_contant {
+  flex: 5;
+}
+
+.goods_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+.goods_title::before {
+  content: '/';
+  color: #ccc;
+  align-items: center;
+}
+
+.goods_title::after {
+  content: '/';
+  color: #ccc;
+  align-items: center;
+}
+
+.goods_item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.goods_item navigator {
+  text-align: center;
+  width: 23.33vw;
+}
+
+.goods_item navigator image {
+  width: 50%;
+}

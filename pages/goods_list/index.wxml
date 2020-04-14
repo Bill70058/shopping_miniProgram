@@ -1,0 +1,18 @@
+<SearchInput></SearchInput>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="first_tab">
+      <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="{{item.goods_id}}" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+        <view class="left_image">
+          <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ae01.alicdn.com/kf/H0b6145f2c0a3497eb0d47de322f6ba85U.png'}}" mode="widthFix"></image>
+        </view>
+        <view class="right_info">
+          <view class="top_text">{{item.goods_name}}</view>
+          <view class="down_price">{{item.goods_price}}$</view>
+        </view>
+      </navigator>
+    </view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">1</block>
+  <block wx:else>2</block>
+</Tabs>

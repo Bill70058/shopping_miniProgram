@@ -1,0 +1,45 @@
+<view class="detail_swiper" hover-class="none" hover-stop-propagation="false">
+  <swiper indicator-dots circular autoplay>
+    <swiper-item wx:for="{{detail.pics}}" wx:key="{{item.pics_id}}" bindtap="handlePriverImage" data-mid="{{item.pics_mid}}">
+      <image mode="widthFix" src="{{item.pics_sma}}" class="detail_image" />
+    </swiper-item>
+  </swiper>
+</view>
+<view class="detail_text" hover-class="none" hover-stop-propagation="false">
+  <view class="detail_price">${{detail.goods_price}}</view>
+  <view class="detail_info">
+    <view class="info_text">{{detail.goods_name}}</view>
+    <view class="info_icon">
+      <text class="iconfont icon-like"></text>
+      <view>收藏</view>
+    </view>
+  </view>
+</view>
+<view class="goods_info">
+  <view class="info_title">图文详情</view>
+  <view class="info-content">
+    <rich-text nodes="{{detail.goods_introduce}}"></rich-text>
+  </view>
+</view>
+<view class="footer">
+  <view class="footer_service footer_icon">
+    <text class="iconfont icon-callingrobort"></text>
+    <view class="footer_text">联系客服</view>
+    <button open-type="contact" class="footer_btn" style="width: 100%;"></button>
+  </view>
+  <view class="footer_share footer_icon">
+  <text class="iconfont icon-share"></text>
+  <view class="footer_text">分享</view>
+  <button open-type="share" class="footer_btn" style="width: 100%;"></button>
+  </view>
+  <navigator class="footer_cart footer_icon" open-type="switchTab" url="/pages/cart/index">
+  <text class="iconfont icon-cart"></text>
+  <view class="footer_text">购物车</view>
+  </navigator>
+  <view class="btn_addTo" bindtap="handleCartAdd">
+  加入购物车
+  </view>
+  <view class="btn_buy">
+  立即购买
+  </view>
+</view>

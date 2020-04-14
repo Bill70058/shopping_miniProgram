@@ -1,0 +1,48 @@
+<!-- 用户地址开始 -->
+<view class="recive_address">
+  <view class="address_btn" wx:if="{{!address.userName}}">
+    <button type="primary" plain bindtap="handleChooseAddress">添加收货地址</button>
+  </view>
+  <view class="address_text" wx:else>
+    <view class="left_info">
+      <view class="top_info">收货人：{{address.userName}}</view>
+      <view class="down_info">{{address.all}}</view>
+    </view>
+    <view class="right_info">{{address.telNumber}}</view>
+  </view>
+</view>
+<!-- 用户地址结束 -->
+
+<view class="car">
+  <view class="car_title">购物车</view>
+  <view class="car_content">
+      <view class="content_item" wx:for="{{carts}}" wx:key="{{item.goods_id}}">
+        <navigator class="item_img">
+          <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+        </navigator>
+        <view class="item_info">
+          <view class="item_infoT">{{item.goods_name}}</view>
+          <view class="item_infoD">
+            <view class="info_price">${{item.goods_price}}</view>
+            <view class="info_tool">
+              <view class="tool_num">x   {{item.nums}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+<!-- 购物车结束 -->
+
+<!-- 底部工具栏开始 -->
+<view class="footer_tool">
+  <view class="tool_center">
+    <view class="center_top">
+      合计:
+      <span class="top_price">${{totalPrice}}</span>
+    </view>
+    <view class="center_down">包含运费</view>
+  </view>
+  <view class="tool_right" bind:tap="handleAccount">支付（{{totalNum}}）</view>
+</view>
+<!-- 底部工具栏结束 -->

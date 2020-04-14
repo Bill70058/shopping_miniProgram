@@ -1,0 +1,147 @@
+/* pages/cart/index.wxss */
+.address_btn {
+  padding: 10rpx;
+}
+
+.address_btn button {
+  width: 60%;
+}
+
+.address_text {
+  padding: 20rpx;
+  display: flex;
+}
+
+.left_info {
+  flex: 5;
+}
+
+.top_info {}
+
+.down_info {}
+
+.right_info {
+  flex: 2;
+  text-align: right
+}
+
+.car_title {
+  color: var(--themeColor);
+  padding: 20rpx;
+  font-size: 32rpx;
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+
+.content_item {
+  display: flex;
+  padding: 10rpx 0;
+  border-bottom: 1rpx dotted #ccc;
+}
+
+.item_checkbox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.item_info {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item_infoT {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #ccc;
+}
+
+.item_infoD {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_price {
+  color: var(--themeColor);
+}
+
+.info_tool {
+  display: flex;
+}
+
+.tool_box {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+
+.tool_num {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+align-items: center;
+
+}
+.tool_checkbox {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.checkbox_label {
+  font-size: 25rpx;
+  color: #ccc;
+}
+.tool_center {
+  flex: 4;
+  text-align: right;
+    padding-right: 10rpx;
+}
+.center_top {
+  font-size: 25rpx;
+}
+.top_price {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: var(--themeColor);
+}
+.center_down {
+  font-size: 25rpx;
+}
+.tool_right {
+  flex: 2;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 500;
+  height: 76rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

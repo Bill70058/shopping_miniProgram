@@ -1,0 +1,61 @@
+/* pages/feedback/index.wxss */
+page {
+  background-color: #eee;
+  padding: 20rpx 0;
+}
+.fb_main {}
+.main_title {}
+.main_tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main_tags text {
+  background-color: #fff;
+  width: 28%;
+  padding: 10rpx;
+  text-align: center;
+  margin: 20rpx 10rpx;
+  font-size: 26rpx;
+}
+.main_content {}
+.main_content textarea {
+  background-color: #fff;
+  width: 95%;
+  padding: 0 10rpx;
+  left: 1%;
+}
+.main_tool {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 9rpx;
+  padding-bottom: 30rpx;
+  justify-content: flex-start;
+}
+.main_tool button {
+  height: 90rpx;
+  width: 90rpx !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  margin: 0 !important;
+  padding: 0;
+  font-size: 60rpx;
+  margin-right: 20rpx !important;
+}
+.main_btn button{
+  width: 200rpx !important;
+background-color: var(--themeColor);
+color: white;
+float: right;
+margin-top: 10rpx;
+margin-right: 10rpx !important;
+
+}
+
+.up_img {
+  display: flex;
+flex-wrap: wrap;
+  margin-right: 20rpx;
+}

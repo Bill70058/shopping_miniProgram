@@ -1,0 +1,157 @@
+/* pages/user/index.wxss */
+page {
+  background-color: rgba(235, 235, 235, 0.685);
+}
+
+.user_info_wrap {
+  height: 45vh;
+  background-color: var(--themeColor);
+  overflow: hidden;
+  position: relative;
+}
+
+.info_wrap {}
+
+.info_bg {
+  height: 50vh;
+  filter: blur(10rpx)
+}
+
+.user_info {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.user_name {
+  color: #fff;
+  margin-top: 20rpx;
+}
+
+.info_btn {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+}
+
+.user_content {
+  position: relative;
+}
+
+.user_main {
+  position: absolute;
+  left: 50%;
+  top: -40rpx;
+  width: 90%;
+  transform: translateX(-50%);
+
+}
+
+.user_history {
+  background-color: #fff;
+  display: flex;
+}
+
+.user_history navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 15rpx;
+}
+
+.history_num {
+  color: var(--themeColor);
+}
+
+.history_name {
+  font-weight: 200;
+  font-size: 28rpx;
+}
+
+.order_wrap {
+  position: absolute;
+  left: 50%;
+  top: 80rpx;
+  width: 90%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10rpx 15rpx;
+}
+
+.wrap_title {
+  height: 50rpx;
+  border-bottom: 1rpx solid rgb(224, 224, 224);
+  line-height: 50rpx;
+  font-size: 26rpx;
+  font-weight: 200;
+}
+
+.wrap_item {
+  display: flex;
+}
+
+.wrap_content {
+  flex: 1;
+  text-align: center;
+}
+
+.iconfont {
+  font-size: 60rpx;
+  color: var(--themeColor);
+}
+
+.wrap_content view {
+  font-size: 25rpx;
+  font-weight: 200;
+}
+
+.address_manager {
+  position: absolute;
+  top: 250rpx;
+  height: 55rpx;
+  background-color: #fff;
+  line-height: 55rpx;
+  width: 90%;
+  left: 5%;
+  border-top: 1rpx solid rgb(224, 224, 224);
+  font-weight: 200;
+  padding-left: 15rpx;
+  display: flex;
+}
+
+.address_manager view {
+  flex: 10;
+}
+
+.iconfont {
+  flex: 1;
+}
+
+.orther {
+  position: absolute;
+  top: 310rpx;
+  background-color: #fff;
+  width: 90%;
+  left: 5%;
+}
+
+.orther_item {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  font-weight: 255;
+  border-bottom: 5rpx solid rgba(235, 235, 235, 0.685);
+  padding: 0 15rpx;
+}
+
+.item_right {
+  float: right;
+}
